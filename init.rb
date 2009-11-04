@@ -1,0 +1,1 @@
+require 'restbox_view_helper.rb'

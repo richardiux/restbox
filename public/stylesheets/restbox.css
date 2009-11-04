@@ -1,0 +1,12 @@
+#overlay_screen {position:fixed; top:0; left:0; height:100%; width:100%; z-index:9999; background-color: #000; overflow:hidden; }
+
+/*#overlay_screen {position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color:#000; cursor: pointer;}*/
+#RB_window { 	position: absolute; z-index: 9999; background-color: #fff; -webkit-border-radius:10px; -webkit-box-shadow:1px 1px 8px rgba(0,0,0,.5); padding:2em;}
+
+#RB_window div.loading {background:white url("../images/restbox/loader.gif") 120px center no-repeat; cursor: wait; padding-top: 0; height: 100%; font-weight:bold; size: 2em;}
+
+
+/*#RB_window {z-index: 10000; margin:0 auto; margin-top:350px;  width:120px; color:#222;  font-weight: bold; ; position:relative;}*/
+
+#RB_window #close {position:absolute; top:-12px; left:-14px; height:30px; width:30px; background:url("../images/restbox/close_button.png") top no-repeat; z-index:inherit}
+#RB_window #close:hover {background:url("../images/restbox/close_button.png") bottom no-repeat; }
