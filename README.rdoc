@@ -18,16 +18,37 @@ in your layout after including jQuery:
 
 == Example
 
+=== In your application.js
+
+  $(document).ready(function() {
+    jQuery("a.restbox").restbox({})
+  }
+
 === In your view
 
-link_to "edit", order_path(@order), :class => "restbox"
+  <%= link_to "edit", order_path(@order), :class => "restbox" %>
+  
 
+=== In your controller
+
+  def edit
+    @order = Order.find params[:id]
+    respond_to do |format|
+      format.html { }
+      format.js   { }
+    end
+  end
+  
+== The JS view for the action (edit.js.erb)
+
+You can use the following javascript helpers
 
 To put text in the restbox:
-  <%= restbox({:content => "some text"})%>
+  <%= restbox(:content => 'some text') %>
 
 To put a partial inside the restbox:
-  <%= restbox(:content => render(:partial => 'orders')) %>
+  <%= restbox(:content => render(:partial => 'form')) %>
+
 
 === With javascript
 
