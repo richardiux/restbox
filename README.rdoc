@@ -1,13 +1,13 @@
 = Restbox
 
-== Prerequisites
-  JQuery 1.3.2
-
 == Install
 
 To install as a Rails plugin, run this command.
 
   script/plugin install http://github.com/richardiux/restbox.git
+
+=== Prerequisites
+  JQuery 1.3.2
 
 == Setup
 
@@ -16,7 +16,7 @@ in your layout after including jQuery:
   <%= javascript_include_tag 'restbox' %>
   <%= stylesheet_link_tag 'restbox' %>
 
-== Example
+== Example on Rails Application
 
 === In your application.js
 
@@ -39,7 +39,7 @@ in your layout after including jQuery:
     end
   end
   
-== The JS view for the action (edit.js.erb)
+=== The JS view for the action (edit.js.erb)
 
 You can use the following javascript helpers
 
@@ -50,7 +50,7 @@ To put a partial inside the restbox:
   <%= restbox(:content => render(:partial => 'form')) %>
 
 
-=== With javascript
+== With javascript
 
 To put content in the restbox
   $.restbox({content: "some text"})
@@ -59,6 +59,7 @@ To manually display loading restbox
   $.restbox({})
   
 == Upgrading
+
 === Reinstall the plugin
  script/plugin install http://github.com/richardiux/restbox.git -f
 
