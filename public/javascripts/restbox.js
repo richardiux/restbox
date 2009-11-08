@@ -17,18 +17,18 @@
     
     options = $.extend({
       loadingClass: "restbox_loading",
-      width: "350px",
       content: $(content)
     }, options);
       
   // just fade screen in, load content when reqest includes content param
   if (options.content.length != 0) {
     $('div#restbox_container div#restbox_content').removeClass(options.loadingClass).html(options.content);      
+    $('div#restbox_container div#restbox_content').css({top: -($('div#restbox_content').height() + 100) / 2});
 
   } else {
     $('div#restbox_screen').fadeIn(120, function() {
       $('div#restbox_container').show()
-      $('div#restbox_container div#restbox_content').width(options.width).addClass(options.loadingClass).html(content);
+      $('div#restbox_container div#restbox_content').addClass(options.loadingClass).html(content);
       $('div#restbox_container div#restbox_content').css({top: -($('div#restbox_content').height() + 100) / 2});
       $('div#restbox_container div#restbox_content').animate({opacity: "100"}, 3000);
     });
