@@ -1,3 +1,9 @@
+/*
+ * RestBox - Simple overlay to work with jQuery and Rails
+ * Copyright (c) 2009
+ * Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
+*/
+
 (function($) {
   
   // initialize

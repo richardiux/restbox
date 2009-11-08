@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "jQuery.restbox("
+    gem.name = "restbox"
     gem.summary = "Simple restful ajax overlay to work with jQuery and Rails"
     gem.description = "Simple restful ajax overlay to work with jQuery and Rails"
     gem.email = "richardiux@gmail.com"
-    gem.homepage = "http://github.com/richardiux/jQuery.restbox("
+    gem.homepage = "http://github.com/richardiux/restbox"
     gem.authors = ["Richard Millan"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
@@ -47,7 +47,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "jQuery.restbox( #{version}"
+  rdoc.title = "restbox #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
