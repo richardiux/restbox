@@ -91,4 +91,4 @@ http://github.com/richardiux/restbox
 
 == Copyright
 
-Copyright (c) 2009 Richard Millan. See LICENSE for details.
+Copyright (c) 2009 Richard Millan & Joseph Silvashy. See LICENSE for details.
