@@ -1,1 +1,1 @@
-require 'restbox_view_helper.rb'
+require 'jQuery.restbox(_view_helper.rb'

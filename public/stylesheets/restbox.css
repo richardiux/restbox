@@ -1,12 +1,14 @@
-#overlay_screen {position:fixed; top:0; left:0; height:100%; width:100%; z-index:9999; background-color: #000; overflow:hidden; }
+body {height:100%;}
 
-/*#overlay_screen {position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color:#000; cursor: pointer;}*/
-#RB_window { 	position: absolute; z-index: 9999; background-color: #fff; -webkit-border-radius:10px; -webkit-box-shadow:1px 1px 8px rgba(0,0,0,.5); padding:2em;}
+div#restbox_screen {display:none; background:black; filter:alpha(opacity=50); opacity:.8; height:100%; width:100%; position:absolute; top:0; left:0; overflow:hidden;}
+div#restbox_screen {background:-webkit-gradient(radial, center center, 1500, center center, 10, from(black), to(rgba(0,0,0,.4)), color-stop(0, black));}
+/*div#restbox_screen {background:-moz-radial-gradient(45px 45px, 10px, 52px 50px, 30px, from(#A7D30C), to(rgba(1,159,98,0)), color-stop(0.90, #019F62));}*/
 
-#RB_window div.loading {background:white url("../images/restbox/loader.gif") 120px center no-repeat; cursor: wait; padding-top: 0; height: 100%; font-weight:bold; size: 2em;}
+div#restbox_container {display:none; text-align:center; vertical-align: middle;  position:absolute; top:50%; left:0px; width:100%; }
+div#restbox_container div#restbox_content {position:relative; margin:auto; padding:20px 30px; font-size:13px; text-align:left; line-height:18px; color:#222; background:#fff; -webkit-border-radius:5px; -webkit-box-shadow:0px 1px 16px rgba(0,0,0,.6); -moz-box-shadow:black 0px 1px 8px; -moz-border-radius:5px;}
+div#restbox_container div#restbox_content.restbox_loading {background:;}
 
+div#restbox_container div#restbox_content a#restbox_close {position:absolute; top:-12px; left:-12px; height:25px; width:26px; background:url('/images/restbox/restbox_close.png') top left; text-indent:-9999px; cursor:pointer;}
+div#restbox_container div#restbox_content a:active#restbox_close {background-position:bottom;}
 
-/*#RB_window {z-index: 10000; margin:0 auto; margin-top:350px;  width:120px; color:#222;  font-weight: bold; ; position:relative;}*/
-
-#RB_window #close {position:absolute; top:-12px; left:-14px; height:30px; width:30px; background:url("../images/restbox/close_button.png") top no-repeat; z-index:inherit}
-#RB_window #close:hover {background:url("../images/restbox/close_button.png") bottom no-repeat; }
+div#restbox_content {opacity:0;}
