@@ -12,6 +12,12 @@
     $('body').append('<div id=\'restbox_screen\'></div>\n<div id=\'restbox_container\'><div id=\'restbox_content\'></div></div>');
   });
   
+  $.restbox_close = function() {
+    $('div#restbox_screen').hide();
+    $('div#restbox_container').hide();
+    $('div#restbox_content').html('')
+  }
+    
   // set defaults
   $.restbox = function(options) {
     
@@ -33,6 +39,14 @@
       $('div#restbox_container div#restbox_content').animate({opacity: "100"}, 3000);
     });
   }
+  
+  close_button = $("<span id='restbox_close'></span>").click(function(event){
+    $.restbox_close();
+    event.preventDefault();
+  });
+  
+  $('div#restbox_container div#restbox_content').prepend(close_button);
+  
 };
 
 // load content
