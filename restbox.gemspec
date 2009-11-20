@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{restbox}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Richard Millan"]
@@ -29,10 +29,10 @@ Gem::Specification.new do |s|
      "generators/restbox/templates/javascripts/restbox.js",
      "generators/restbox/templates/restbox.rb",
      "generators/restbox/templates/stylesheets/restbox.css",
-     "init.rb",
      "install.rb",
      "lib/restbox.rb",
      "lib/restbox_view_helper.rb",
+     "rails/init.rb",
      "restbox.gemspec",
      "test/helper.rb",
      "test/test_restbox.rb"
