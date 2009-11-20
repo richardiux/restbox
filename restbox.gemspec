@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{restbox}
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Richard Millan"]
-  s.date = %q{2009-11-03}
+  s.date = %q{2009-11-19}
   s.description = %q{Simple restful ajax overlay to work with jQuery and Rails}
   s.email = %q{richardiux@gmail.com}
   s.extra_rdoc_files = [
@@ -22,7 +22,18 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION.yml",
+     "generators/restbox/restbox_generator.rb",
+     "generators/restbox/templates/images/loader.gif",
+     "generators/restbox/templates/images/restbox_close.png",
+     "generators/restbox/templates/javascripts/restbox.js",
+     "generators/restbox/templates/restbox.rb",
+     "generators/restbox/templates/stylesheets/restbox.css",
+     "init.rb",
+     "install.rb",
      "lib/restbox.rb",
+     "lib/restbox_view_helper.rb",
+     "restbox.gemspec",
      "test/helper.rb",
      "test/test_restbox.rb"
   ]
