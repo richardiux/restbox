@@ -2,12 +2,19 @@
 
 == Install
 
-To install as a Rails plugin, run this command.
-
+To install as a Rails plugin:
+  
   script/plugin install http://github.com/richardiux/restbox.git
+  
+To install as a gem:
+  
+  gem install restbox
 
-=== Prerequisites
-  JQuery 1.3.2
+
+Copy javascript, CSS, and images files to public
+  
+  script/generate restbox
+
 
 == Setup
 
@@ -58,13 +65,17 @@ To put content in the restbox
 To manually display loading restbox
   $.restbox({})
   
+  
+== Prerequisites
+    JQuery 1.3.2
+
 == Upgrading
 
 === Reinstall the plugin
  script/plugin install http://github.com/richardiux/restbox.git -f
 
 === Regenerate JS and CSS
- cd vendor/plugins/restbox/; ruby install.rb
+ script/generate restbox
 
 == Bug Reports
 
