@@ -13,8 +13,8 @@ class RestboxGenerator < Rails::Generator::Base
       m.template 'javascripts/restbox.js',   File.join('public', 'javascripts', 'restbox.js')
       
       m.directory File.join('public', 'images')
-      m.template 'images/loader.gif',   File.join('public', 'images', 'loader.gif')
-      m.template 'images/restbox_close.png',   File.join('public', 'images', 'restbox_close.png')
+      m.template 'images/loader.gif',   File.join('public', 'images', 'restbox', 'loader.gif')
+      m.template 'images/restbox_close.png',   File.join('public', 'images', 'restbox' , 'restbox_close.png')
     end
   end
     
