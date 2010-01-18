@@ -1,6 +1,6 @@
 /*
  * RestBox - Simple overlay to work with jQuery and Rails
- * Copyright (c) 2009
+ * Copyright (c) 2010
  * Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
 */
 
@@ -35,8 +35,11 @@
     if (options.content.length != 0) {
       $('div#restbox_screen').show();
       $('div#restbox_container').show();
-      $('div#restbox_container div#restbox_content').removeClass(options.loadingClass).html(options.content);      
-      $('div#restbox_container div#restbox_content').css({top: -($('div#restbox_content').height() + 100) / 2});    
+      if (options.container_class) {
+        $('div#restbox_container').addClass(options.container_class);
+      };
+      $('div#restbox_container div#restbox_content').removeClass(options.loadingClass).html(options.content);
+      $('div#restbox_container div#restbox_content').css({top: -($('div#restbox_content').height() + 100) / 2});
       $('div#restbox_container div#restbox_content').animate({opacity: "100"}, 3000);
 
     } else {

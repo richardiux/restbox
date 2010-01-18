@@ -11,7 +11,10 @@ module ActionView
       module InstanceMethods
         def restbox(options = {})
           content = escape_javascript(options[:content].to_s || '')
-          "jQuery.restbox({content: \"#{content}\"});"
+          container_class = escape_javascript(options[:container_class].to_s || '')
+          params = "content: \"#{content}\""
+          params += ", container_class: \"#{container_class}\"" unless container_class.empty?
+          "jQuery.restbox({#{params}});"
         end
       end
     end
