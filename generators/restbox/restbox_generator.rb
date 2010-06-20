@@ -1,5 +1,7 @@
 class RestboxGenerator < Rails::Generator::Base
   
+  source_root File.expand_path('../templates', __FILE__)
+  
   def initialize(*runtime_args)
     super
   end

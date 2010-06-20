@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "Gemfile",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
@@ -32,6 +33,7 @@ Gem::Specification.new do |s|
      "init.rb",
      "install.rb",
      "lib/restbox.rb",
+     "lib/restbox/restbox_view_helper.rb",
      "rails/init.rb",
      "restbox.gemspec"
   ]
