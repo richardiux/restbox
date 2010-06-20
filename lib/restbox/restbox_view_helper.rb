@@ -14,7 +14,7 @@ module ActionView
           container_class = escape_javascript(options[:container_class].to_s || '')
           params = "content: \"#{content}\""
           params += ", container_class: \"#{container_class}\"" unless container_class.empty?
-          "jQuery.restbox({#{params}});"
+          "jQuery.restbox({#{params}});".html_safe
         end
       end
     end

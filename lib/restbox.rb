@@ -1,0 +1,1 @@
+require 'restbox/restbox_view_helper'
