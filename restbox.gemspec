@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION.yml",
+     "generators/restbox/USAGE",
      "generators/restbox/restbox_generator.rb",
      "generators/restbox/templates/images/loader.gif",
      "generators/restbox/templates/images/restbox_close.png",

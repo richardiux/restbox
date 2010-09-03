@@ -1,4 +1,4 @@
-class RestboxGenerator < Rails::Generator::Base
+class RestboxGenerator < Rails::Generator::NamedBase
   
   source_root File.expand_path('../templates', __FILE__)
   
@@ -27,3 +27,23 @@ class RestboxGenerator < Rails::Generator::Base
   end
   
 end
+
+# class RestboxGenerator < Rails::Generator::Base
+# 
+#   source_root File.expand_path('../templates', __FILE__)
+#   argument :layout_name, :type => :string, :default => "application"
+# 
+#   def all
+#     directory File.join('public', 'stylesheets')
+#     template 'stylesheets/restbox.css', 'public/stylesheets/restbox.css'
+# 
+#     directory File.join('public', 'javascripts')
+#     template 'javascripts/restbox.js', 'public/javascripts/restbox.js'
+# 
+#     directory File.join('public', 'images')
+#     template 'images/loader.gif', 'public/images/restbox/loader.gif'
+#     template 'images/restbox_close.png', 'public/images/restbox/restbox_close.png'
+# 
+#   end
+# 
+# end

@@ -2,7 +2,7 @@ Description:
     Explain the generator
 
 Example:
-    rails generate restbox
+    rails generate restbox all
 
     This will create:
-        what/will/it/create
+        Copies restbox.css, restbox.js, and images to it's proper location to public
